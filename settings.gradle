@@ -1,0 +1,2 @@
+include ':app','MultilevelTreeLibrary','htmlSpanner',':update-app', ':ucrop',':picture_library','lib-zxing'
+

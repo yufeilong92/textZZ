@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/space_16"
+    android:paddingRight="@dimen/space_16">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/space_18"
+            android:layout_height="@dimen/space_30"
+            android:src="@mipmap/ic_home_information" />
+
+        <Space style="@style/space_10_width" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/home_infom"
+            android:textColor="@color/text_title_color"
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:id="@+id/tv_infom_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="@dimen/space_4"
+            android:drawableRight="@mipmap/ic_more_go"
+            android:gravity="center_vertical"
+            android:padding="@dimen/space_8"
+            android:text="@string/more"
+            android:textColor="@color/hint_text" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv_recommend_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_home_article" />
+<Space style="@style/space_8_width"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/home_infom_all"
+            android:textColor="@color/text_title_color"
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:id="@+id/tv_article_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/space_8"
+            android:drawablePadding="@dimen/space_4"
+            android:drawableRight="@mipmap/ic_more_go"
+            android:text="@string/more"
+            android:textColor="@color/hint_text" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv_recommend_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

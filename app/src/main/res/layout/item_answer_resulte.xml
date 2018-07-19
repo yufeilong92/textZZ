@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/space_16"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <ImageView
+            android:id="@+id/iv_evaluate_hear"
+            android:layout_width="@dimen/space_48"
+            android:layout_height="@dimen/space_48"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <Space style="@style/space_20_width" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_evalue_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名字"
+                android:textColor="@color/text_title_color"
+                android:textSize="@dimen/text_size_14" />
+
+            <Space style="@style/space_16_height" />
+
+            <TextView
+                android:id="@+id/tv_evalue_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="评价内容评价内容评价内容评价内容评价内容评价内容评价内容评价内容评价内容" />
+
+            <Space style="@style/space_16_height" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_evalue_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1分钟" />
+
+                <TextView
+                    android:id="@+id/tv_evalue_evalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/ic_comment"
+                    android:drawablePadding="@dimen/space_8"
+                    android:text="评论" />
+
+                <Space style="@style/space_16_width" />
+
+                <CheckBox
+                    android:id="@+id/chb_evalua_issupper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/select_issupper_home"
+                    android:button="@null" />
+
+                <Space style="@style/space_8_width" />
+
+                <TextView
+                    android:id="@+id/tv_evalue_suppernumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="99" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <Space style="@style/space_16_height" />
+    <View style="@style/view_line_1" />
+</LinearLayout>

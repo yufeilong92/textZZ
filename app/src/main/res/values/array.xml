@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="search_reasult">
+        <item>文章</item>
+        <item>题库</item>
+    </string-array>
+    <string-array name="bank_tab">
+        <item>技术实务</item>
+        <item>综合能力</item>
+        <item>案例分析</item>
+    </string-array>
+    <string-array name="net_book_title">
+        <item>详情</item>
+        <item>课程表</item>
+    </string-array>
+    <string-array name="net_mybook_title">
+        <item>课程表</item>
+        <item>评价</item>
+    </string-array>
+    <string-array name="my_order_title">
+        <item>全部</item>
+        <item>待付款</item>
+        <item>已完成</item>
+    </string-array>
+    <string-array name="home_order_title">
+        <item>首页</item>
+        <item>题库</item>
+        <item></item>
+        <item>网课</item>
+        <item>我的</item>
+    </string-array>
+</resources>

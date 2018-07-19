@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/input_bg"
+    android:orientation="vertical"
+    tools:context=".ui.me.SettingActivity">
+
+    <LinearLayout style="@style/TitleBar">
+
+        <ImageView
+            style="@style/TitleBarAction"
+            android:onClick="onHomeClick"
+            android:src="@mipmap/ic_back"
+            tools:ignore="OnClick" />
+
+        <TextView
+            style="@style/TitleBarText"
+            android:text="" />
+
+        <ImageView style="@style/TitleBarAction" />
+
+    </LinearLayout>
+
+    <View style="@style/view_line_tab_line_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/space_16"
+        android:paddingRight="@dimen/space_16">
+
+        <LinearLayout
+            android:id="@+id/ll_m_setting_bindWei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="@dimen/space_48"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/bindweixin"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/tv_m_setting_weixin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_fu_color"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <View style="@style/view_line_1_gray" />
+
+        <TextView
+            android:id="@+id/tv_m_setting_paw"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_48"
+            android:gravity="center_vertical"
+            android:text="@string/modify_password"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14" />
+
+        <View style="@style/view_line_1_gray" />
+
+        <LinearLayout
+            android:id="@+id/ll_m_setting_updata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/space_48"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/version_update"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+
+                android:id="@+id/tv_m_setting_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_fu_color"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <View style="@style/view_line_1_gray" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_m_setting_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/space_16"
+        android:text="@string/about"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_14" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/btn_b_s_out"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_56"
+            android:background="@color/white"
+            android:text="@string/back"
+            android:gravity="center"
+            android:textColor="@color/red_text"
+            android:textSize="@dimen/text_size_18" />
+    </RelativeLayout>
+</LinearLayout>
